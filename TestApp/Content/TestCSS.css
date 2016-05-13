@@ -1,0 +1,60 @@
+﻿body {
+}
+.leftSlide {
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    width: 300px;
+    height: 1000px;
+    top: 0;
+    left: -250px;
+}
+.wrapper {
+    position: relative;
+}
+.humburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.humburger i {
+    font-size: 40px;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+}
+.leftContent {
+    padding: 150px 50px ;
+    text-align: center;
+}
+.leftContent h3 {
+    font-weight: bold;
+    margin: 50px 0 10px;
+}
+.leftContent img {
+    border: solid 2px white;
+    width: 100%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.leftContent ul {
+    list-style: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+.leftContent ul li {
+
+    cursor: pointer;
+}
+.leftContent ul li a {
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    display: block;
+    color: rgb(51, 51, 51);
+}
+.leftSlide ul li a:hover {
+    border: solid 1px rgb(51, 51, 51);
+    text-decoration: none;
+}

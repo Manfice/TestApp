@@ -1,0 +1,96 @@
+﻿body {
+    background: url("/Content/img/mainBG.jpg") no-repeat center center fixed;
+    -ms-background-size: 100% 100%;
+    background-size: 100%;
+    color: whitesmoke;
+    position: relative;
+}
+footer {
+    height: 100px;
+}
+.head {
+    text-align: left;
+    color: whitesmoke;
+}
+.head h1 {
+    margin: 25px 0 0 0;
+}
+.head h3 {
+    margin: 10px 0 30px 0;
+}
+article {
+    max-width: 800px;
+}
+article p {
+    text-align: justify;
+}
+article p:first-letter {
+    margin: 0 0 0 25px;
+}
+article h3 {
+    border-bottom: solid 3px;
+}
+article table {
+    max-width: 800px;
+}
+article table thead {
+    text-align: center;
+}
+.leftSlide {
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    width: 300px;
+    height: 1000px;
+    top: 0;
+    left: -250px;
+}
+.wrapper {
+    position: relative;
+}
+.humburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.humburger i {
+    font-size: 40px;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+}
+.leftContent {
+    padding: 150px 50px ;
+    text-align: center;
+}
+.leftContent h3 {
+    font-weight: bold;
+    margin: 50px 0 10px;
+}
+.leftContent img {
+    border: solid 2px white;
+    width: 100%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.leftContent ul {
+    list-style: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+.leftContent ul li {
+
+    cursor: pointer;
+}
+.leftContent ul li a {
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    display: block;
+}
+.leftSlide ul li a:hover {
+    border: solid 1px whitesmoke;
+    text-decoration: none;
+}
