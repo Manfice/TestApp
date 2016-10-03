@@ -1,0 +1,157 @@
+﻿html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    height: 100%;
+    font-family: "RobotoBold";
+    background: url("/Content/img/ppr.jpg") repeat fixed;
+}
+header {
+    flex: 0 0 auto;
+    height: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, transparent, rgb(125, 64, 139),rgb(125, 64, 139), transparent);
+    color: white;
+}
+.title {
+    flex: 1 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(125, 64, 139);
+    justify-content: space-between;
+    align-items: center;
+}
+.title h1 {
+    margin: 0 0 0 20px;
+    flex: 0 0 auto;
+    font-size: 1.5em;
+}
+.title h2 {
+    margin: 0 10px 0 0;
+    flex: 0 0 auto;
+    font-size: 1em;
+}
+.bContent {
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contWrap {
+    flex: 0 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.aboutMe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px;
+}
+.aboutMe h3 {
+    flex: 1 0 100%;
+    text-align: center;
+    color: rgb(125, 64, 139);
+    text-transform: uppercase;
+}
+.imgWrapper {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 50px 0;
+}
+.imgWrapper img {
+    width: 100%;
+    border: solid 5px rgb(125, 64, 139);
+    border-radius: 50%;
+    padding: 5px;
+}
+.descr {
+    flex: 0 0 50%;
+    color: rgb(30, 30, 30);
+    font-size: 2em;
+}
+.descr ul li {
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.descr ul li i {
+    margin: 5px 10px;
+    width: 60px;
+    text-align: center;
+}
+.myProf {
+    background: #d3d3d3;
+    background: rgba(211, 211, 211, 0.73);
+    border-bottom: solid 1px;
+}
+
+.myProf h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: rgb(125, 64, 139);
+    text-transform: uppercase;
+    display: block;
+    font-size: 3em;
+}
+.workWith {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.workWith img {
+    flex: 0 0 10%;
+    margin: 10px;
+    height: 100%;
+    align-self: center;
+    width: 1px;
+}
+.myPlus {
+    background: #d3d3d3;
+    background: rgba(175, 255, 255, 0.73);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.myPlus h3 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(30, 30, 30);
+}
+.myPlus ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.myPlus ul li {
+    flex: 0 0 45%;
+    display: block;
+    background-color: rgb(125, 64, 139);
+    margin: 15px 15px;
+    color: whitesmoke;
+    padding: 10px;
+}
+.plItem h4 i {
+    margin: 0 10px;
+}
+/**/
+footer {
+    flex: 0 0 auto;
+    height: 50px;
+    background: #000000;
+}

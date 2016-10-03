@@ -9,7 +9,7 @@ namespace TestApp.Controllers
 {
     public class StartController : Controller
     {
-        private IRepository _repository;
+        private readonly IRepository _repository;
 
         public StartController()
         {
@@ -24,6 +24,11 @@ namespace TestApp.Controllers
         public ActionResult PersonsDetails()
         {
             return View(_repository.GetPersons);
+        }
+
+        public ActionResult Sfj()
+        {
+            return View();
         }
     }
 }

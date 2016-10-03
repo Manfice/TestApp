@@ -7,6 +7,8 @@ namespace TestApp.Repos
     public interface IRepository
     {
         IEnumerable<Person> GetPersons { get; }
+        Person GetPerson(int id);
+        IEnumerable<Person> GetSexPerson(bool sex);
         Task<int> AddPersonAsync(Person person);
         Task<Person> DeletePersonAsync(int personId);
 

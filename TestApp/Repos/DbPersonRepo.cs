@@ -12,7 +12,7 @@ namespace TestApp.Repos
 
         public IEnumerable<Interest> GetInterests => _context.Interests.Distinct();
 
-        public IEnumerable<Person> GetPersons => _context.Persons;
+        public IEnumerable<Person> GetPersons => _context.Persons.ToList();
 
         public async Task<int> AddInterestAsync(Interest interest)
         {
@@ -70,6 +70,16 @@ namespace TestApp.Repos
             }
             await _context.SaveChangesAsync();
             return dbPerson;
+        }
+
+        public Person GetPerson(int id)
+        {
+            return _context.Persons.Find(id);
+        }
+
+        public IEnumerable<Person> GetSexPerson(bool sex)
+        {
+            return _context.Persons.Where(gender => gender.IsMale == sex).ToList();
         }
     }
 }
